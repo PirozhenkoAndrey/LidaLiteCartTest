@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PomArtifact/PomArtifact.iml" filepath="$PROJECT_DIR$/PomArtifact/PomArtifact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.projext.pom.iml" filepath="$PROJECT_DIR$/com.projext.pom.iml" />
+    </modules>
+  </component>
+</project>
