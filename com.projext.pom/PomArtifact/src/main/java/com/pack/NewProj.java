@@ -23,8 +23,21 @@ public class NewProj {
     }
 
     @Test
-    public void TestOpenGoogle() {
-        driver.get("http://litecart.com/admin/");
+    public void TestTask2 (){
+        driver.get("http://litecart-2.0.1/");
+        driver.findElement(By.cssSelector("#box-account-login a")).click();
+        driver.findElement(By.cssSelector("[name=tax_id]")).sendKeys("1234567890");
+        driver.findElement(By.cssSelector("[name=company]")).sendKeys("Some Company");
+        driver.findElement(By.cssSelector("[name=firstname]")).sendKeys("Clark");
+        driver.findElement(By.cssSelector("[name=lastname]")).sendKeys("Cant");
+        driver.findElement(By.cssSelector("[name=address1]")).sendKeys("UA");
+        driver.findElement(By.cssSelector("[name=address2]")).sendKeys("USA");
+        driver.findElement(By.cssSelector("[name=postcode]")).sendKeys("012345");
+        driver.findElement(By.cssSelector("[name=city]")).sendKeys("Kiev");
+    }
+    @Test
+    public void TestLiteCartTask1() {
+        driver.get("http://litecart-2.0.1/admin/");
         driver.findElement(By.cssSelector("[name=username]")).sendKeys("admin");
         driver.findElement(By.cssSelector("[name=password]")).sendKeys("admin");
         driver.findElement(By.cssSelector("#box-login button")).click();
@@ -81,11 +94,11 @@ public class NewProj {
         driver.findElement(By.cssSelector("a[href*=geo_zones]")).click();
         driver.findElement(By.tagName("h1"));
 
-        driver.quit();
     }
 
     @After
     public void stop(){
+        driver.quit();
     }
 }
 
